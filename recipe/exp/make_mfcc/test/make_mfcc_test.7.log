@@ -1,0 +1,17 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.7 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.7.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.7 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_test.7.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_test.7.scp 
+# Started at Sat Feb 13 17:37:25 IST 2021
+#
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.7 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.7.scp ark:- 
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.7 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_test.7.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_test.7.scp 
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part143
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part144
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part145
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part146
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part147
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part148
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part149
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part15
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:185)  Done 8 out of 8 utterances.
+LOG (copy-feats[5.5.883~1-3eea3]:main():copy-feats.cc:143) Copied 8 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Feb 13 17:37:25 IST 2021, elapsed time 0 seconds

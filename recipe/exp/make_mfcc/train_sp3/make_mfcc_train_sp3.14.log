@@ -1,0 +1,542 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train_sp3/utt2dur.14 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train_sp3/wav_train_sp3.14.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train_sp3/utt2num_frames.14 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.14.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.14.scp 
+# Started at Sat Feb 13 17:37:14 IST 2021
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train_sp3/utt2num_frames.14 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.14.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.14.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train_sp3/utt2dur.14 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train_sp3/wav_train_sp3.14.scp ark:- 
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part494
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part495
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part5
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part50
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part51
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part52
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part53
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part54
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part55
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part56
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part57
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part58
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part59
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part6
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part60
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part61
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part62
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part63
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part64
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part65
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part66
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part67
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part68
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part69
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part7
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part70
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part71
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part72
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part73
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part74
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part75
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part76
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part77
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part78
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part79
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part8
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part80
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part81
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part82
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part83
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part84
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part85
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part86
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part87
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part88
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part89
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part9
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part90
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part91
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part92
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part93
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part94
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part95
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part96
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part97
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part98
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp0.9-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part99
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part10
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part100
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part101
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part102
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part103
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part104
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part105
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part106
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part107
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part108
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part109
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part11
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part110
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part111
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part112
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part113
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part114
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part115
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part116
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part117
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part118
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part119
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part12
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part120
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part121
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part122
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part123
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part124
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part125
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part126
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part127
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part128
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part129
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part13
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part130
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part131
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part132
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part133
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part134
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part135
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part136
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part137
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part138
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part139
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part14
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part140
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part141
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part142
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part144
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part145
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part146
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part147
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part148
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part149
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part15
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part150
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part151
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part152
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part153
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part154
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part155
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part156
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 120 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part157
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part158
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part159
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part16
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part160
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part161
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part162
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part163
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part164
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part165
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 130 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part166
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part167
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part168
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part169
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part17
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part170
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part171
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part172
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part173
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part174
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 140 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part175
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part176
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part177
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part178
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part179
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part18
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part180
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part181
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part182
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part183
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 150 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part184
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part185
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part186
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part187
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part188
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part189
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part19
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part190
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part191
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part192
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 160 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part193
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part194
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part195
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part196
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part197
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part198
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part199
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part2
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part20
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part200
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 170 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part201
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part202
+sox WARN wav: Length in output .wav header will be wrong since can't seek to fix it
+VLOG[1] (compute-mfcc-feats[5.5.883~1-3eea3]:Read():wave-reader.cc:249) Read in RIFF chunk size: 2147479588, data chunk size: 2147479552. Assume 'stream mode' (reading data to EOF).
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key sp1.1-SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part203
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:185)  Done 172 out of 172 utterances.
+LOG (copy-feats[5.5.883~1-3eea3]:main():copy-feats.cc:143) Copied 172 feature matrices.
+# Accounting: time=4 threads=1
+# Ended (code 0) at Sat Feb 13 17:37:18 IST 2021, elapsed time 4 seconds

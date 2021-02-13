@@ -1,0 +1,27 @@
+# gmm-acc-stats-ali exp/mono/10.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_sp3/split4/1/utt2spk scp:data/train_sp3/split4/1/cmvn.scp scp:data/train_sp3/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/10.1.acc 
+# Started at Sat Feb 13 17:43:04 IST 2021
+#
+gmm-acc-stats-ali exp/mono/10.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_sp3/split4/1/utt2spk scp:data/train_sp3/split4/1/cmvn.scp scp:data/train_sp3/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/10.1.acc 
+apply-cmvn --utt2spk=ark:data/train_sp3/split4/1/utt2spk scp:data/train_sp3/split4/1/cmvn.scp scp:data/train_sp3/split4/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part145 avg. like is -97.2234 over 348 frames.
+WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part18
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part191 avg. like is -99.0536 over 396 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part5 avg. like is -99.5382 over 414 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part95 avg. like is -101.887 over 230 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part140 avg. like is -105.936 over 448 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part186 avg. like is -104.261 over 447 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part35 avg. like is -102.613 over 231 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part80 avg. like is -98.4111 over 225 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part125 avg. like is -104.047 over 263 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part170 avg. like is -109.197 over 301 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part215 avg. like is -103.123 over 365 frames.
+WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part47
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part52 avg. like is -102.024 over 538 frames.
+LOG (apply-cmvn[5.5.883~1-3eea3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 653 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part98 avg. like is -102.175 over 426 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:112) Done 651 files, 2 with errors.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -104.027 over 227652 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Sat Feb 13 17:43:06 IST 2021, elapsed time 2 seconds
