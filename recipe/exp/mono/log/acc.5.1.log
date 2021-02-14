@@ -1,47 +1,50 @@
 # gmm-acc-stats-ali exp/mono/5.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_sp3/split4/1/utt2spk scp:data/train_sp3/split4/1/cmvn.scp scp:data/train_sp3/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/5.1.acc 
-# Started at Sat Feb 13 17:40:22 IST 2021
+# Started at Mon Feb 15 00:34:47 IST 2021
 #
 gmm-acc-stats-ali exp/mono/5.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_sp3/split4/1/utt2spk scp:data/train_sp3/split4/1/cmvn.scp scp:data/train_sp3/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/5.1.acc 
-add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/train_sp3/split4/1/utt2spk scp:data/train_sp3/split4/1/cmvn.scp scp:data/train_sp3/split4/1/feats.scp ark:- 
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part145 avg. like is -101.88 over 348 frames.
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part145 avg. like is -101.933 over 348 frames.
+WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part163
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part164
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part17
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part18
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part19
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part194 avg. like is -110.23 over 540 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part195 avg. like is -108.293 over 312 frames.
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part20
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part24
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part25
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part26
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part56 avg. like is -105.664 over 216 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part57 avg. like is -107.429 over 278 frames.
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part72
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part73
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part74
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part76
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part77
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part78
-WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101106_16k-emission_swahili_05h30_-_06h00_tu_20101106_part79
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part107 avg. like is -104.508 over 316 frames.
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part153 avg. like is -109.792 over 249 frames.
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part199 avg. like is -106.91 over 372 frames.
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part48 avg. like is -107.512 over 249 frames.
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part93 avg. like is -104.49 over 371 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part107 avg. like is -104.535 over 316 frames.
+WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part120
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part154 avg. like is -110.043 over 353 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part2 avg. like is -108.619 over 286 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part49 avg. like is -90.2678 over 400 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part94 avg. like is -104.854 over 375 frames.
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part121
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part129
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part132
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part138
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part140
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part141
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part143 avg. like is -102.652 over 247 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part144 avg. like is -105.745 over 360 frames.
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part168
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part19 avg. like is -111.175 over 323 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part190 avg. like is -114.65 over 421 frames.
 WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part222
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part26 avg. like is -105.362 over 329 frames.
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part71 avg. like is -106.81 over 296 frames.
+WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part223
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part28 avg. like is -108.871 over 406 frames.
+WARNING (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part47
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part74 avg. like is -105.88 over 256 frames.
 LOG (apply-cmvn[5.5.883~1-3eea3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 653 utterances, errors on 0
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:112) Done 630 files, 23 with errors.
-LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -106.948 over 219952 frames.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:112) Done 627 files, 26 with errors.
+LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -106.998 over 218931 frames.
 LOG (gmm-acc-stats-ali[5.5.883~1-3eea3]:main():gmm-acc-stats-ali.cc:123) Written accs.
-# Accounting: time=1 threads=1
-# Ended (code 0) at Sat Feb 13 17:40:23 IST 2021, elapsed time 1 seconds
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Feb 15 00:34:47 IST 2021, elapsed time 0 seconds

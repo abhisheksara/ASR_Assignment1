@@ -14,7 +14,7 @@
 ###############################################################
 #                   Configuring the ASR pipeline
 ###############################################################
-stage=5    # from which stage should this script start
+stage=0    # from which stage should this script start
 nj=4        # number of parallel jobs to run during training
 test_nj=2    # number of parallel jobs to run during decoding
 # the above two parameters are bounded by the number of speakers in each set
@@ -81,7 +81,7 @@ fi
 if [ $stage -le 5 ]; then
   utils/data/perturb_data_dir_speed_3way.sh data/train data/train_sp3
   
-  #MFCC feature extraction + mean-variance normalization for augmnted data
+  #MFCC feature extraction + mean-variance normalization for augmented data
   for x in train_sp3 test; do
       steps/make_mfcc.sh --nj 20 --cmd "$train_cmd" data/$x exp/make_mfcc/$x mfcc
       steps/compute_cmvn_stats.sh data/$x exp/make_mfcc/$x mfcc
@@ -107,7 +107,7 @@ if [ $stage -le 5 ]; then
      steps/align_si.sh --nj $nj --cmd "$train_cmd" \
         data/train_sp3 data/lang exp/mono exp/mono_ali
 	 steps/train_deltas.sh --boost-silence 1.25  --cmd "$train_cmd"  \
-	    3000 30000 data/train_sp3 data/lang exp/mono_ali exp/tri1
+	    1000 10000 data/train_sp3 data/lang exp/mono_ali exp/tri1
     echo "Triphone training done"
   (
     echo "Decoding the test set"
@@ -118,7 +118,6 @@ if [ $stage -le 5 ]; then
       exp/tri1/graph data/test exp/tri1/decode_test
     echo "Triphone decoding done."
     ) &
-
 fi
 
 wait;

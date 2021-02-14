@@ -1,312 +1,312 @@
 # lattice-scale --inv-acoustic-scale=10 "ark:gunzip -c exp/tri1/decode_test/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:exp/tri1/decode_test/scoring/10.tra 
-# Started at Sat Feb 13 17:58:35 IST 2021
+# Started at Mon Feb 15 00:45:54 IST 2021
 #
-lattice-scale --inv-acoustic-scale=10 'ark:gunzip -c exp/tri1/decode_test/lat.*.gz|' ark:- 
 lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:exp/tri1/decode_test/scoring/10.tra 
+lattice-scale --inv-acoustic-scale=10 'ark:gunzip -c exp/tri1/decode_test/lat.*.gz|' ark:- 
 lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part10, best cost 77.2637 + 2774.8 = 2852.06 over 276 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part10 msemaji wa baraza hilo na dii elizabeth bila ya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part100, best cost 154.4 + 5189.46 = 5343.86 over 506 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part100 ili kujua lengo la mtambo hao mwandishi wetu wa jijini kampala hatua ni siri ngono na kuwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part101, best cost 57.7585 + 4520.19 = 4577.95 over 413 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part101 kisha salama katika chama 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part102, best cost 22.728 + 3670.39 = 3693.11 over 334 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part102 kama na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part103, best cost 17.2919 + 5242.66 = 5259.95 over 469 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part103 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part104, best cost 56.4708 + 4616.58 = 4673.05 over 418 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part104 pia ambapo waliibia watu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part105, best cost 43.2258 + 3919.16 = 3962.38 over 353 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part105 waishi kwa na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part106, best cost 34.5125 + 2422.2 = 2456.72 over 217 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part106 sasa mali 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part107, best cost 23.1125 + 2617.73 = 2640.84 over 230 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part107 polisi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part108, best cost 72.8947 + 3506.88 = 3579.78 over 320 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part108 na kwa linahusiana ama kukosa maana 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part109, best cost 42.6754 + 4078.69 = 4121.37 over 373 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part109 na kwamba ana 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part11, best cost 60.1962 + 2302.45 = 2362.64 over 236 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part10, best cost 70.5197 + 2712.4 = 2782.92 over 276 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part10 msemaji wa baraza hilo bei elizabeth abiria 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part100, best cost 145.288 + 5120.03 = 5265.31 over 506 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part100 ili kujua lengo la mgambo hao mwandishi wetu jijini kampala hatua ni singo anakuwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part101, best cost 114.514 + 4425.87 = 4540.38 over 413 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part101 kamati shaka ya kulinda usalama katika manyama kadi shule chama 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part102, best cost 80.5781 + 3602.78 = 3683.35 over 334 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part102 kamanda kemikali samahani katika kwamba kabisa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part103, best cost 137.172 + 5105.28 = 5242.45 over 469 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part103 hii ni mara ya pili kwa kazi kushauri mitambo mikakati lakini mama wenye katika wa ni kada 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part104, best cost 115.074 + 4541.21 = 4656.29 over 418 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part104 kama kama afrika pia hata kama na kama ambapo zaidi ya watu wengi na sita 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part105, best cost 103.156 + 3817 = 3920.16 over 353 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part105 matiko maisha kwa na kufunguliwa mashtaka miongoni mwa watu na waganda 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part106, best cost 66.6415 + 2362.22 = 2428.86 over 217 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part106 sasa malima moja kutoka basi katika 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part107, best cost 54.5661 + 2589.64 = 2644.21 over 230 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part107 polisi sita ni kama alisema 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part108, best cost 66.1111 + 3480.92 = 3547.03 over 320 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part108 na kulinda usalama kukosa maana katika 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part109, best cost 78.0911 + 4015.23 = 4093.32 over 373 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part109 hali saba na kwamba wameingia ubia na kuwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part11, best cost 60.2196 + 2301.78 = 2362 over 236 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part11 asema zaidi ya watu mia saba na sita 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part110, best cost 15.7451 + 3013 = 3028.74 over 274 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part110 na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part111, best cost 16.6144 + 2743.92 = 2760.54 over 248 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part111 pia 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part112, best cost 34.5412 + 2782.13 = 2816.67 over 256 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part112 lakini akasema kuwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part113, best cost 71.5182 + 3831.78 = 3903.3 over 350 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part113 salama na kula yake ambae 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part114, best cost 59.1229 + 3001.5 = 3060.62 over 270 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part114 kama kisha tu kwa samani 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part115, best cost 102.794 + 5671.03 = 5773.83 over 560 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part115 na sakata bahi ni ya mahakama ya kimataifa ifna kivita 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part116, best cost 112.054 + 2797.21 = 2909.26 over 271 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part116 bunge aidha leticia kasi ni wiliam moto jina hili 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part117, best cost 164.775 + 5410.61 = 5575.39 over 530 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part117 hili yenye mbali nirudi kita kiakili heka kuu la hizi yalipo makao makuu ya mahakama 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part118, best cost 63.3418 + 2678.1 = 2741.44 over 260 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part118 alionya kuwa je kesi hiyo inayowakabili 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part119, best cost 79.1837 + 2290.92 = 2370.1 over 217 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part119 wafadhili nao chichi ya chama cha sauko 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part12, best cost 73.0194 + 3473.76 = 3546.78 over 344 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part12 na wengine takribani mia moja na mia mbili 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part120, best cost 55.4319 + 2577.96 = 2633.39 over 250 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part120 uliotokea nchini kenya baada ya uchaguzi mkuu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part121, best cost 57.9445 + 3573.59 = 3631.53 over 323 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part121 namba kikatili kuwania 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part122, best cost 48.1438 + 3973.83 = 4021.98 over 348 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part122 serikalini hivyo kwamba 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part123, best cost 10.0549 + 2791.14 = 2801.2 over 242 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part123 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part124, best cost 26.6491 + 3424.33 = 3450.98 over 317 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part124 na kwamba 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part125, best cost 23.3329 + 2384.65 = 2407.98 over 216 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part125 kwa nini 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part126, best cost 28.4518 + 2448.01 = 2476.47 over 215 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part126 ikibaki 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part127, best cost 95.6371 + 5118.07 = 5213.71 over 494 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part127 jambo wazi wa siri ya kuona ya katiba 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part128, best cost 48.3742 + 5160.48 = 5208.85 over 458 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part128 wa ili ya waziri 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part129, best cost 59.943 + 2689.87 = 2749.82 over 268 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part129 cha mkutano huo maarufu kama nchini 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part13, best cost 105.275 + 4147.74 = 4253.01 over 418 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part13 kiongozi mkuu wa siasa za umoja wa ulaya bei kasema aston 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part130, best cost 117.79 + 3423.35 = 3541.14 over 337 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part130 wenzangu vita na czech ya tabu sow ilifuatilia wakali 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part131, best cost 137.172 + 5738.41 = 5875.59 over 556 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part131 wakati wa mkutano huo wa siku mbili ni hali ya wasiwasi limeshuhudiwa miongoni mwa wajumbe wa mataifa hayo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part132, best cost 88.3621 + 3522.52 = 3610.88 over 351 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part110, best cost 70.0386 + 2939.53 = 3009.57 over 274 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part110 na yapo mambo yako samani kinyama 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part111, best cost 35.0673 + 2720.09 = 2755.16 over 248 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part111 pili kwa amani 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part112, best cost 59.2127 + 2755.03 = 2814.24 over 256 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part112 hata hivyo lilipitisha lakini akasema kuwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part113, best cost 94.5301 + 3765.36 = 3859.89 over 350 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part113 lengo la yake maisha salama na hakuna yake ambayo imekataliwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part114, best cost 83.2158 + 2956.86 = 3040.08 over 270 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part114 serikali yake kwa kutandika majeshi ya kukosa mali 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part115, best cost 99.9252 + 5610.19 = 5710.12 over 560 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part115 sakata baina ya makame kimataifa ifna kivita hayo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part116, best cost 99.775 + 2750.34 = 2850.12 over 271 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part116 mbunga ya eti kaskazini wiliam mvutaji mahili 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part117, best cost 140.319 + 5368.88 = 5509.2 over 530 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part117 aidha yenye mbali nairobi city kiakili heka uholanzi yalipo makao makuu ya mahakama 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part118, best cost 68.4032 + 2645.82 = 2714.22 over 260 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part118 wa yanga huo ajili ya kesi hiyo inayowakabili 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part119, best cost 57.3492 + 2248.6 = 2305.95 over 217 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part119 wafadhili na wachochezi wa machafuko 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part12, best cost 78.2664 + 3435.82 = 3514.08 over 344 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part12 na wengine takriban mrefu ya elfu moja na mia mbili 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part120, best cost 56.5866 + 2549.69 = 2606.28 over 250 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part120 aliwatakia nchini kenya baada ya uchaguzi mkuu 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part121, best cost 81.8703 + 3529.42 = 3611.29 over 323 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part121 mamba kikatili hataruhusiwa kuwania wake 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part122, best cost 114.424 + 3895.75 = 4010.17 over 348 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part122 serikalini kwa hivyo c tunaona matunda utitiri kwamba kuteka 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part123, best cost 57.6942 + 2735.01 = 2792.7 over 242 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part123 yakiandaliwa ikikamata kigeni 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part124, best cost 88.4526 + 3338.6 = 3427.06 over 317 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part124 na hivi kama deci za kikazi kama ambavyo vilikuwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part125, best cost 42.7362 + 2362.8 = 2405.54 over 216 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part125 na kwa sasa na sitini na nne 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part126, best cost 63.8761 + 2399.11 = 2462.98 over 215 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part126 kali ni kati ya serikali ya rais mwai kibaki 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part127, best cost 115.716 + 5041.83 = 5157.55 over 494 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part127 naye jambazi kwanza uwaziri mwa siri ya kwamba ya katiba 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part128, best cost 130.368 + 5033.2 = 5163.56 over 458 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part128 alipongeza sana tuliwahi nzuri ya wazi alikuwa zile lini kimelemeta 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part129, best cost 52.1955 + 2662.81 = 2715 over 268 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part129 katika mkutano huo maarufu kama nchi yetu 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part13, best cost 95.4061 + 4114.96 = 4210.37 over 418 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part13 kiongozi mkuu wa siasa za umoja wa ulaya abdi kassim aston 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part130, best cost 104.752 + 3403.74 = 3508.49 over 337 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part130 mwenzangu vita na kizee vitabu sawa ifuatilie makali 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part131, best cost 131.346 + 5670.65 = 5802 over 556 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part131 wakati wa mkutano huo wa siku mbili hali wasiwasi limeshuhudiwa miongoni mwa wajumbe wa mataifa hayo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part132, best cost 88.3624 + 3480.74 = 3569.11 over 351 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part132 hasa katika suala la kutafuta mbinu za kumaliza mzozo sarafu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part133, best cost 89.4076 + 2656.27 = 2745.68 over 264 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part133, best cost 88.9445 + 2640.99 = 2729.94 over 264 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part133 mzozo ambao unatishia kudorora kuchuma dunia 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part134, best cost 83.9479 + 2461.64 = 2545.59 over 248 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part134 baada mataifa hayo kushusha kama na sarafu zao 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part135, best cost 61.6615 + 2821.66 = 2883.32 over 274 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part134, best cost 78.6737 + 2448.69 = 2527.36 over 248 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part134 baada ya mataifa hayo kushusha kama na sarafu zao 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part135, best cost 60.8163 + 2795.76 = 2856.57 over 274 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part135 akihutubia mkutano huo rais wa marekani barack obama 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part136, best cost 100.429 + 3767.64 = 3868.07 over 372 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part136, best cost 99.7283 + 3739.53 = 3839.26 over 372 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part136 amesema marekani ililazimika kutisha thamani yake ya sarafu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part137, best cost 53.3772 + 2196.28 = 2249.66 over 215 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part137, best cost 53.9106 + 2166.58 = 2220.5 over 215 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part137 ambayo ilikuwa limeshuhudiwa nchini humo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part138, best cost 72.912 + 4127.31 = 4200.23 over 394 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part138 weka kwa kuwa tulikubaliana kuwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part139, best cost 68.5039 + 2518.53 = 2587.03 over 242 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part139 tokana na hali ngumu ya uchumi tulikuwa ni 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part14, best cost 81.6637 + 3079.6 = 3161.27 over 305 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part14 juu ya mpango wake uzalishaji wa madini lilian 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part140, best cost 105.346 + 4482.24 = 4587.59 over 435 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part140 naamini nimezungumza na rais wa china na a to z ili kuchunguza 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part141, best cost 87.4295 + 3248.33 = 3335.76 over 320 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part138, best cost 69.8041 + 4082.77 = 4152.57 over 394 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part138 wewe isiwe kikwazo kwa bayana kuwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part139, best cost 64.8192 + 2487.27 = 2552.09 over 242 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part139 tokana na hali ngumu ya uchumi tulikuwa na 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part14, best cost 82.8891 + 3031.72 = 3114.61 over 305 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part14 juu ya mpango wake wa uzalishaji wa madini ya imeenea 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part140, best cost 122.709 + 4372.22 = 4494.93 over 435 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part140 naamini nilizungumza la rais chuo china na a to z ili kuchunguza 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part141, best cost 87.1194 + 3203.11 = 3290.23 over 320 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part141 kiini kupungua kwa thamani ya sarafu ya ushindi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part142, best cost 89.7657 + 3633.4 = 3723.16 over 346 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part142 kuwa hatua ambazo tatu wa ili hatua huu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part143, best cost 73.0844 + 3132.88 = 3205.96 over 299 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part143 si wanampango wa kulisaidia sisi wenyewe 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part144, best cost 165.135 + 5919 = 6084.14 over 580 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part144 naye waziri mkuu inaeleza tayari kama wana anasema makubaliano ya kuimarisha soko la ukweli shahidi wa sarafu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part145, best cost 113.567 + 4761.89 = 4875.45 over 467 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part145 ni miongoni mwa mambo ambayo itasaidia kuimarisha biashara balama taifa ya wanachama 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part146, best cost 79.5194 + 4228.46 = 4307.98 over 403 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part146 na mataifa hayo ya jitu wa nchi wao 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part147, best cost 109.355 + 3937.89 = 4047.24 over 373 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part147 ushaidi kwa kuwa kocha sumu ndio mita dalali si 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part148, best cost 76.4506 + 2483.18 = 2559.63 over 236 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part148 ndiyo maana kuwalaumu ni mwa kufika ya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part149, best cost 70.3866 + 2590.18 = 2660.57 over 249 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part149 wasafirishaji wa bidhaa na kwa soko la wengi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part15, best cost 52.0537 + 3100.91 = 3152.96 over 301 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part142, best cost 79.8682 + 3586.04 = 3665.91 over 346 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part142 watu wa ambazo tatu akili na tatu huu 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part143, best cost 67.4104 + 3082.5 = 3149.91 over 299 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part143 akiwa na mpango wa kulisaidia sisi wenyewe 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part144, best cost 154.205 + 5841.13 = 5995.33 over 580 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part144 naye waziri mkuu uingereza deni cameroon amesema makubaliano ya kuimarisha soko la uboreshaji wa sarafu 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part145, best cost 116.003 + 4712.77 = 4828.78 over 467 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part145 ni miongoni mwa mambo ambayo itasaidia kuimarisha biashara baya mataifa ya wanachama 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part146, best cost 94.4499 + 4177.58 = 4272.03 over 403 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part146 na mataifa hayo ya jitu eti wa kitaifa wa uganda 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part147, best cost 100.285 + 3896 = 3996.29 over 373 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part147 taswa utasaidia kwa kuwa kocha huu ndio mita dalali 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part148, best cost 69.9707 + 2443.72 = 2513.69 over 236 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part148 sasa ndio maana kumekuwa na umuhimu wa ufike 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part149, best cost 75.3765 + 2534.32 = 2609.7 over 249 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part149 wasafirishaji wa bidhaa na kwa soko la winga 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part15, best cost 51.1933 + 3066.89 = 3118.08 over 301 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part15 hatua hiyo imekuja siku chache baada ya kiongozi huyo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part150, best cost 113.4 + 5706.3 = 5819.7 over 547 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part150 na hii ndiyo sababu leo ni kwanini ili nchini china wake chamangwana 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part151, best cost 115.246 + 3847.69 = 3962.93 over 383 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part150, best cost 133.495 + 5595.08 = 5728.58 over 547 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part150 na hii ndiyo sababu leo ni kufanya nini nchini china kufanikisha mambo nakwenda likizo ya chama hicho 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part151, best cost 114.521 + 3788.97 = 3903.49 over 383 frames.
 SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part151 aidha viongozi hao mataifa jitu eti wameamua kuweka mpango maalum 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part152, best cost 86.4231 + 3544.61 = 3631.03 over 346 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part152 wa kila mwaka kuchukua hatua zozote na kuimarisha hali ya chakula 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part153, best cost 80.0071 + 2918.61 = 2998.62 over 285 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part153 na kupunguza pengo kati mataifa tajiri ya maskini 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part154, best cost 48.1118 + 3705.69 = 3753.8 over 370 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part154 hasa barani afrika na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part155, best cost 118.589 + 4133.17 = 4251.76 over 407 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part155 jumanne lilishuhudia mauaji wa rais wao zaidi ya arobaini huko nchini na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part156, best cost 87.6201 + 2759.61 = 2847.23 over 274 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part156 ambapo wa na mgambo wa kundi la kigaidi na al qaeda 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part157, best cost 83.5222 + 2932.82 = 3016.34 over 277 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part157 bendi kocha ni waziri wa mambo inatia ya kufanya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part158, best cost 39.0097 + 3805.16 = 3844.17 over 348 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part158 kilio cha kupuuza 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part159, best cost 73.0457 + 2965.42 = 3038.47 over 281 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part159 kama wa kike za kuchukua waliowahi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part16, best cost 75.2945 + 2228.45 = 2303.74 over 223 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part16 waasia na kufanya maji maji ajili ya nao 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part160, best cost 81.0697 + 2473.05 = 2554.12 over 241 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part160 kina zaidi ya wairaq ilianza moja mia mbili 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part161, best cost 42.8219 + 2713.72 = 2756.54 over 255 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part161 ya kikristo ambao 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part162, best cost 83.8831 + 3907.18 = 3991.07 over 371 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part162 lakini hivyo kuona hiyo tatizo alikuwa wakristo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part163, best cost 109.68 + 3285.3 = 3394.98 over 322 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part163 kama mateso ni asali wakila hii na kwa wakiishi wake 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part164, best cost 137.278 + 4991.45 = 5128.73 over 482 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part164 na sisi kinatoa msaada wetu lakini sioni hizo ambazo zitakazosaidia wa samaki 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part165, best cost 59.8555 + 2805.46 = 2865.32 over 263 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part165 nyanya na wakristo mashariki na kati 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part166, best cost 75.1346 + 2608.25 = 2683.39 over 253 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part166 na sasa inapokea wakili wa samaki na saba 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part167, best cost 72.2505 + 2526.38 = 2598.63 over 251 frames.
-SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part167 kituo cha maafa iliweka ligi kwa ajili ya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10, best cost 135.299 + 5339.91 = 5475.21 over 511 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10 obama amesema atatumia vizuri nafasi yake e atakayepata siku hiyo wa juma 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100, best cost 57.8511 + 5454.3 = 5512.15 over 505 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100 sana na kwa kuwa wana 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101, best cost 66.755 + 5724.87 = 5791.62 over 520 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101 kwa kuwa wa mamia ya na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102, best cost 97.8087 + 4138.48 = 4236.29 over 394 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102 na mawakili kwamba kutofahamika ushauri ya hizo za soka 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103, best cost 119.71 + 4908.69 = 5028.4 over 470 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part152, best cost 89.8285 + 3523.37 = 3613.2 over 346 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part152 wa kila mwaka kuchukua hatua zozote na kuimarisha hali chakula 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part153, best cost 72.2952 + 2892.99 = 2965.28 over 285 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part153 na kupunguza pengo kati mataifa tajiri umaskini 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part154, best cost 41.2725 + 3664.41 = 3705.69 over 370 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part154 hasa barani afrika 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part155, best cost 130.947 + 4057.54 = 4188.48 over 407 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part155 juma hili ili mwisho dhidi ya mauaji wa rais wao zaidi ya arobaini huku nchi nira 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part156, best cost 87.3335 + 2721.16 = 2808.49 over 274 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part156 ambapo wa na mgambo kundi la kigaidi na al qaeda 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part157, best cost 75.4592 + 2887.17 = 2962.63 over 277 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part157 beki kushika ni waziri wa mambo ya nje kufa na 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part158, best cost 75.2889 + 3751.08 = 3826.37 over 348 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part158 chetu kesho itashuka kichekesho kila kukicha 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part159, best cost 58.9265 + 2939.32 = 2998.25 over 281 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part159 usalama wa nchi imependekeza kuwa majeruhi 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part16, best cost 60.6394 + 2199.25 = 2259.88 over 223 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part16 wasira kufanya maji majadiliano 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part160, best cost 73.2121 + 2443.69 = 2516.91 over 241 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part160 inasaidia wairaq kiasi moja mia mbili 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part161, best cost 63.5632 + 2650.69 = 2714.26 over 255 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part161 wenyeji ya kikristo ambao wamekuwa cuf 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part162, best cost 92.3237 + 3828.72 = 3921.05 over 371 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part162 lakini tatizo kubwa iliyopo na hilo tatizo ni kwa wakristo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part163, best cost 103.852 + 3243.06 = 3346.91 over 322 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part163 kama mateso asali wakila hii na kuwa kisu wote 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part164, best cost 136.43 + 4903.67 = 5040.1 over 482 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part164 na sisi kinatoa msaada wetu lakini shundi shamba zitakazosaidia kutatua matatizo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part165, best cost 72.0925 + 2752.38 = 2824.47 over 263 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part165 kutumia ya sauti na wakristo mashariki na kati 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part166, best cost 70.0653 + 2575.52 = 2645.59 over 253 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part166 na sasa na wake waliowahi wa thebathini na saba 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part167, best cost 72.299 + 2497.57 = 2569.87 over 251 frames.
+SWH-05-20101113_16k-emission_swahili_05h30_-_06h00_tu_20101113_part167 kituo cha maafa iliweka ndege kwa ajili ya 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10, best cost 126.26 + 5263.77 = 5390.03 over 511 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10 obama amesema atatumia vizuri nafasi yake atakayoipata siku hiyo wajumbe ni 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100, best cost 102.128 + 5362.62 = 5464.75 over 505 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100 sana kazi bila ya wanageuka wa kata kawe 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101, best cost 73.9875 + 5683.76 = 5757.75 over 520 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101 kwa hakika wakubwa mamia ya nataka 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102, best cost 104.945 + 4044.19 = 4149.13 over 394 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102 na kwa sasa nafikiri kwamba kutoa fahamu sheria hizo za soka 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103, best cost 119.383 + 4849.35 = 4968.73 over 470 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103 labda zimefanya kwamba mataifa afrika mashariki na kati ya haja fuso katika mashindano 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104, best cost 118.425 + 4067.78 = 4186.21 over 392 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104 ama kubwa kama kombe la dunia na malindi kombe la mataifa bingwa bali 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105, best cost 35.6762 + 2740.16 = 2775.84 over 253 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105 ni na ya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106, best cost 58.1058 + 2851.27 = 2909.37 over 264 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106 kutoka kwa mashabiki wa soka napenda 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107, best cost 57.8486 + 5683.64 = 5741.49 over 529 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107 ni ama kwa kwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108, best cost 22.2294 + 2905.64 = 2927.87 over 256 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109, best cost 31.7523 + 3234.08 = 3265.83 over 297 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109 unaona 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11, best cost 71.5869 + 2833.47 = 2905.05 over 267 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11 kujikita katika ubunifu huku wakiahidi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110, best cost 35.4987 + 2831.88 = 2867.38 over 250 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110 kuna katika 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111, best cost 120.529 + 4757.91 = 4878.44 over 450 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111 kuna kuona kuna msahama wana na usemi na kusema kwamba uzalendo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112, best cost 75.9426 + 2408.52 = 2484.47 over 235 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112 kwa kuanza mingine baadaye pengine huo ni 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113, best cost 158.403 + 5455.28 = 5613.68 over 507 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113 wa wanatakiwa afanye kwa utatumikia taifa baada ya ndipo jaji masuala ya pochi inakataa ni 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114, best cost 140.628 + 5380.38 = 5521.01 over 500 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114 na e wana wakiwa sitini kuna chama na unatosha inabidi kuwaliza 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115, best cost 31.5086 + 3902.05 = 3933.56 over 359 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115 ya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116, best cost 43.3546 + 5014.07 = 5057.42 over 443 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116 kwa na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117, best cost 25.1858 + 2657.4 = 2682.59 over 239 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117 kwa kweli 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118, best cost 34.2544 + 2927.17 = 2961.43 over 270 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118 saba 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part119, best cost 82.9315 + 3059.47 = 3142.41 over 292 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104, best cost 116.046 + 4001.49 = 4117.53 over 392 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104 ama kubwa kama kombe la dunia na mara nyingi kombe la mataifa bengo bayana 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105, best cost 45.9394 + 2707.46 = 2753.39 over 253 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105 ni ya inatakiwa iangalie 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106, best cost 80.5402 + 2777.74 = 2858.28 over 264 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106 a kutoka kwa mashabiki wa soka osama penda 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107, best cost 45.4854 + 5656.67 = 5702.16 over 529 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107 ni ama kwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108, best cost 51.6358 + 2842.52 = 2894.15 over 256 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108 vita na wanapewa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109, best cost 55.7721 + 3206.26 = 3262.03 over 297 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109 na nyoka anakuwa naona kuna 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11, best cost 70.4897 + 2799.82 = 2870.31 over 267 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11 kujikita katika ubunifu huku akiahidi 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110, best cost 56.2101 + 2789.6 = 2845.81 over 250 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110 kuna cha yote matatu katika 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111, best cost 113.825 + 4667.3 = 4781.12 over 450 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111 sasa kuna kuna wako na msimamo na wanaosema na kusema kwamba uzalendo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112, best cost 61.6659 + 2368.67 = 2430.33 over 235 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112 wa kwanza nyingine baada ya kingine awali 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113, best cost 173.594 + 5348.79 = 5522.38 over 507 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113 wa wanatakiwa afanya kwanza atumikie taifa baada ya ndipo ya aje masuala ya posho na kada hali 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114, best cost 140.778 + 5302.93 = 5443.71 over 500 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114 na nane hadi si wanawake wa sitini kunatia namna mnatetea klabu hiyo kwanza 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115, best cost 56.6213 + 3834.2 = 3890.82 over 359 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115 hata kamati ya na ya 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116, best cost 81.8956 + 4951.22 = 5033.12 over 443 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116 kwa benki au hata namba hiyo alikuwa na 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117, best cost 39.6596 + 2638.67 = 2678.33 over 239 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117 haukuwa kikwete 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118, best cost 26.8143 + 2909.07 = 2935.89 over 270 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118 hapa ni 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part119, best cost 82.3123 + 3013.15 = 3095.47 over 292 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part119 na hasa cha sana profesa mwakilasa ukiwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12, best cost 98.7851 + 3274.53 = 3373.31 over 305 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12 katika hotuba hii ya akili uchumi ndio itakuwa mada kuu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120, best cost 128.981 + 4855.99 = 4984.97 over 466 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120 nairobi hapo nchini kenya mashaka tucta wasi na tena kwa kingine 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121, best cost 100.727 + 3818 = 3918.73 over 361 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121 atakapokuwa na kama huu labda mwenzangu na wana na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122, best cost 126.889 + 4467.64 = 4594.53 over 428 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122 nami na anatoa sasa kwa kuweza kushiriki pamoja na kesi majina kelele 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123, best cost 129.243 + 5342.41 = 5471.66 over 539 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123 na tumeshuhudia mengi wakati wachezaji ila wa kimataifa na kuitimiza kauli kusema 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124, best cost 77.1285 + 2516.75 = 2593.88 over 240 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124 kulitokea na kuchezwa mashaka na sika 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125, best cost 133.715 + 4599 = 4732.71 over 454 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125 dar es salam tanzania kuwa kulipita na na na wana na naye timu mbalimbali kucheza 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126, best cost 76.4302 + 2679.75 = 2756.18 over 262 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126 makini ni kweli kabisa ni kitu ambacho ni tunisia 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127, best cost 104.963 + 4365.53 = 4470.49 over 430 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127 licha ya kwamba kingine tanzania waliibuka na kidini ya katika michuano 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128, best cost 51.9329 + 2220.68 = 2272.61 over 228 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12, best cost 77.3045 + 3233.99 = 3311.29 over 305 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12 katika hotuba yake uchumi ndio itakuwa maana kuu 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120, best cost 132.478 + 4786.53 = 4919.01 over 466 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120 hana hilo bili hapo nchini kenya mashaka na wasio na tano kati mingine 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121, best cost 117.371 + 3742.84 = 3860.21 over 361 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121 atakapokuwa na mgeja mengine kama huu labda mwenzangu naona na 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122, best cost 131.877 + 4391.88 = 4523.76 over 428 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122 naamini na kuchekesha na profesa kwa kuweza kushiriki pamoja na si haji na kilele 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123, best cost 134.642 + 5262.14 = 5396.78 over 539 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123 na tumeshuhudia mengi wakati wachezaji ya wa kimataifa na viti za kauli kusema 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124, best cost 90.1241 + 2469.06 = 2559.18 over 240 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124 kumetokea ama kuchezwa masha na si tafa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125, best cost 134.501 + 4528.12 = 4662.62 over 454 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125 baadaye salaam tanzania wa kulipita na na ambao wana namna ya timu mbalimbali kucheza 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126, best cost 73.8498 + 2653.11 = 2726.96 over 262 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126 nani ni kweli kabisa ni kitu ambacho ni tunisia 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127, best cost 109.517 + 4274.57 = 4384.09 over 430 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127 alitia kwamba kingine tanzania waliibuka kidedea katika michuano 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128, best cost 51.6697 + 2180.71 = 2232.38 over 228 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128 maoni yao ya ya chalenji lakini 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129, best cost 109.481 + 4962.03 = 5071.52 over 472 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129 anaona bado kuhitajika za ziada katika wakichagua wachezaji wetu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13, best cost 64.6352 + 2504.42 = 2569.06 over 243 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13 ambayo itakuwa hiki kusikia msimamo wake 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130, best cost 121.632 + 4467.19 = 4588.82 over 437 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130 tisini kulipokuwa sana makato kushindanishwa kasi katika walisema kwamba wao 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131, best cost 95.6093 + 3546.58 = 3642.19 over 331 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131 kwa kusema kwamba shirikisho la soka nchini kenya fupi kenya limited 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132, best cost 100.649 + 3820.97 = 3921.62 over 365 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129, best cost 126.317 + 4867.34 = 4993.65 over 472 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129 kwa anaona bado kuhitajika nguvu za ziada katika wa kisha kwamba nchi yetu 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13, best cost 70.7974 + 2465.04 = 2535.83 over 243 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13 ambayo itakuwa equip osiah msimamo wake 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130, best cost 148.828 + 4384.65 = 4533.48 over 437 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130 hili wapo kuwa ada sana makato mashindano ya soka si caf wa walisema kombo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131, best cost 105.195 + 3489.53 = 3594.72 over 331 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131 kupiga mashuti kwamba shirikisho la soka nchini kenya future kenya limited 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132, best cost 96.0392 + 3782.45 = 3878.49 over 365 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132 akudo kufanya vizuri kwa timu zetu za taifa changamoto ni kuwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part133, best cost 81.5895 + 3860.92 = 3942.51 over 374 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part133, best cost 81.7732 + 3820.8 = 3902.58 over 374 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part133 viongozi wa soka afrika mashariki na kati kuhakikisha kwamba wachezaji wanajua 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part134, best cost 66.1967 + 2376.83 = 2443.03 over 244 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part134, best cost 65.6705 + 2334.71 = 2400.38 over 244 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part134 na moja kwa moja ni kuna mwenzangu hapa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135, best cost 70.7798 + 2790.4 = 2861.18 over 274 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135 vita na bushoke tujaribu kuangalia hili 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136, best cost 78.9852 + 2353.13 = 2432.12 over 230 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136 wanamichezo wa kuwaka bunge kwamba wanapendwa na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137, best cost 51.8182 + 2241.69 = 2293.51 over 215 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135, best cost 66.9749 + 2751.21 = 2818.18 over 274 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135 vita bushoke tujaribu kuangalia hili 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136, best cost 70.846 + 2316.81 = 2387.66 over 230 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136 kama mchezo wa kabongo mbona pemba na 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137, best cost 50.6476 + 2192.88 = 2243.53 over 215 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137 mashabiki wengi hapa katika ukanda 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138, best cost 113.059 + 4399.04 = 4512.1 over 424 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138 kilaini ya simu vitabu ikiwa kumpata nchi wa wiliam 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139, best cost 70.7868 + 2819.42 = 2890.21 over 280 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138, best cost 106.476 + 4340.76 = 4447.24 over 424 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138 na kilaini ya simu vitabu amefanikiwa kupata jioni william 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139, best cost 70.5574 + 2775.68 = 2846.23 over 280 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139 maarufu sana hapa tanzania kama dawa hiyo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14, best cost 120.26 + 5732.78 = 5853.04 over 548 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14 waziri mkuu wa aina ya kibwana ambaye mkoa wetu ametangaza kujiuzuru wadhifa wake 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140, best cost 109.573 + 4278.35 = 4387.92 over 417 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140 kutuambia huko upande dalili sasa katika jiji la dar es salaam pengine 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141, best cost 30.5877 + 3260.29 = 3290.88 over 314 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141 mashariki ya 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142, best cost 81.9458 + 3398.07 = 3480.01 over 327 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142 wa wa kama kocha una kukuza vipaji vya wachezaji 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143, best cost 55.9406 + 2516.21 = 2572.15 over 244 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143 hapo wa hapa jijini hapa tanzania 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part144, best cost 90.908 + 3800.92 = 3891.83 over 376 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14, best cost 129.324 + 5630.11 = 5759.43 over 548 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14 waziri mkuu wa aelewe kibwana ambaye niko wengi ametangaza kujiuzuru wadhifa wake 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140, best cost 122.478 + 4202.11 = 4324.59 over 417 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140 a kutuambia uko pande dalili sasa katika jiji la dar es salaam pengine 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141, best cost 50.3067 + 3213.35 = 3263.65 over 314 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141 hao mashariki kwenda ya 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142, best cost 75.8407 + 3355.46 = 3431.3 over 327 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142 wewe kama kocha una kukuza vipaji vya wachezaji 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143, best cost 44.8306 + 2471.37 = 2516.2 over 244 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143 hapo wa mjini hapa tanzania 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part144, best cost 90.1876 + 3740.88 = 3831.07 over 376 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part144 unaozungumzia vipi nidhamu za wachezaji wa timu za taifa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145, best cost 21.0192 + 2475.06 = 2496.08 over 222 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145 kwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146, best cost 11.699 + 4641.26 = 4652.95 over 422 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147, best cost 64.554 + 4375.46 = 4440.01 over 403 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147 wa na kwa kwani wenzio za 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148, best cost 54.6911 + 5446.33 = 5501.03 over 508 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148 sababu wana wa umeme 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149, best cost 11.2389 + 3661.38 = 3672.62 over 340 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15, best cost 118.565 + 4518.2 = 4636.76 over 433 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15 bwana kwa hii ni ambaye anakabiliwa na upinzani mkali tu kwetu na chati 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150, best cost 21.008 + 4020.61 = 4041.62 over 373 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150 nani 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151, best cost 56.4133 + 5968.65 = 6025.06 over 551 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151 ni kweli kwa kwa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152, best cost 24.2886 + 3288.92 = 3313.21 over 306 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152 walimu 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153, best cost 30.783 + 2781.66 = 2812.45 over 254 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153 kumi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154, best cost 36.4983 + 3915.15 = 3951.65 over 351 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154 wa kuwa na 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155, best cost 27.34 + 2421.22 = 2448.56 over 218 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155 kidini 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156, best cost 29.9323 + 5247.13 = 5277.06 over 485 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156 wa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157, best cost 131.945 + 5995.19 = 6127.13 over 572 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157 kwa hakika jioni na hasa wale amani karume na kazi ya ziada kwa kuuza vijana 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158, best cost 27.4321 + 2437.9 = 2465.34 over 223 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158 wa 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159, best cost 167.936 + 5808.82 = 5976.75 over 549 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159 na tu kuishukuru tuu na kidini sota katika vipi ni vijana ndio jaji kuwa wake 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part16, best cost 63.0887 + 2767.52 = 2830.61 over 268 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145, best cost 33.0559 + 2457.4 = 2490.45 over 222 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145 kwanza ni maamuzi 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146, best cost 49.724 + 4561 = 4610.72 over 422 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146 maandalizi ya kuona ni vizuri 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147, best cost 81.5486 + 4321.54 = 4403.09 over 403 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147 na na kwa nini ulivyoona hakuna na 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148, best cost 34.2269 + 5414 = 5448.22 over 508 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148 kuna huku 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149, best cost 29.9249 + 3642.71 = 3672.64 over 340 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149 kuwepo kwa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15, best cost 113.994 + 4443.55 = 4557.54 over 433 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15 bwana koo ina ambaye anakabiliwa na upinzani mkali ichukue chama chake 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150, best cost 42.0908 + 3982.72 = 4024.82 over 373 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150 na ni zamu ya umma 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151, best cost 45.3221 + 5951.82 = 5997.14 over 551 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151 ni kweli kwamba nyingine 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152, best cost 61.7074 + 3241.41 = 3303.12 over 306 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152 mimi kama mwalimu na imewataka 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153, best cost 38.804 + 2752.35 = 2791.16 over 254 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153 kumbe na mkewe 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154, best cost 73.1652 + 3863.1 = 3936.27 over 351 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154 wewe kubwa ya na kwa magoli zaidi 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155, best cost 48.5498 + 2388.89 = 2437.44 over 218 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155 ikibidi kwa sasa kuna 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156, best cost 92.6808 + 5154.38 = 5247.06 over 485 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156 mimi ninaona na ubora na meli za vijana hawa 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157, best cost 137.68 + 5926.94 = 6064.62 over 572 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157 tumbo kuzungumzia kupatikana jana awali ya maji ya umma na kazi ya ziada kwa za vijana 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158, best cost 46.0862 + 2408.53 = 2454.61 over 223 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158 iko wazi kuongeza 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159, best cost 169.099 + 5688.55 = 5857.65 over 549 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159 na kitu kushukuru tuna kingine tajiri kasonta katika kipindi vijavyo jaji kwa la mechi 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part16, best cost 63.8099 + 2737.42 = 2801.23 over 268 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part16 alisema kuwa na juzi huru kwa hiyari yake 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160, best cost 120.485 + 3967.59 = 4088.08 over 373 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160 na nilikuwa na ni chetu uliopita ya kiswahili amekufa au sita nation 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161, best cost 114.967 + 4704.27 = 4819.24 over 460 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161 jina langu ni vitabu sumatra waliona ni lina maana ya mmasi 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162, best cost 74.2029 + 2932.93 = 3007.13 over 298 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162 kamanda wa kundi hili anatumaini popote pale 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163, best cost 70.8776 + 2557.18 = 2628.06 over 253 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163 na mashabiki kuwa katika na wapi za michezo 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164, best cost 92.7936 + 2581.1 = 2673.89 over 259 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164 wanakataa barabara ji si mamba na vile 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165, best cost 73.4912 + 2578.96 = 2652.45 over 245 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165 naam na bila shaka na budi kati ya kutosha 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166, best cost 123.134 + 4620.32 = 4743.45 over 458 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166 katika ji kwa na michezo na hali hii ni kitu cha mwisho ana ambacho 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160, best cost 138.19 + 3875.89 = 4014.08 over 373 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160 na ni jukwaa la ni chetu cha bidhaa kiswahili adui lofo sita nation 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161, best cost 114.655 + 4654.2 = 4768.86 over 460 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161 na nauli vitabu sumari za ndani linatia jamaa na chama 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162, best cost 75.7364 + 2902.94 = 2978.68 over 298 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162 dhamana wa kundi a na tuwe popote pale 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163, best cost 72.7762 + 2499.58 = 2572.35 over 253 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163 na mashabiki kwa kandanda wapi za michezo 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164, best cost 77.0197 + 2572.38 = 2649.4 over 259 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164 wanapata barabara jinsi mamba na vingine 
 LOG (lattice-scale[5.5.883~1-3eea3]:main():lattice-scale.cc:107) Done 150 lattices.
 LOG (lattice-add-penalty[5.5.883~1-3eea3]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 150 lattices.
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167, best cost 126.96 + 4360.77 = 4487.73 over 435 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167 apige ni kina mbuzi na kila mwana mwa wakikaa mashariki 
-LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:124) Overall cost per frame is 10.7358 = 0.21858 [graph] + 10.5172 [acoustic] over 52310 frames.
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165, best cost 70.4425 + 2550.39 = 2620.83 over 245 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165 namna bila shaka na budi kati ya kutosha 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166, best cost 110.166 + 4568.16 = 4678.32 over 458 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166 katika jukwaa la michezo na wale hii ni kituo cha mwisho ambacho 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:99) For utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167, best cost 118.638 + 4271.65 = 4390.28 over 435 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167 pengine kile mguu sar kila mwanao mwao wa afrika mashariki 
+LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:124) Overall cost per frame is 10.6109 = 0.245371 [graph] + 10.3656 [acoustic] over 52310 frames.
 LOG (lattice-best-path[5.5.883~1-3eea3]:main():lattice-best-path.cc:128) Done 150 lattices, failed for 0
-# Accounting: time=1 threads=1
-# Ended (code 0) at Sat Feb 13 17:58:36 IST 2021, elapsed time 1 seconds
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Feb 15 00:45:56 IST 2021, elapsed time 2 seconds

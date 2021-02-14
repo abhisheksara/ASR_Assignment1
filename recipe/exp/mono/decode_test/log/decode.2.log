@@ -1,162 +1,162 @@
 # gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode_test/lat.2.gz" 
-# Started at Sat Feb 13 17:52:09 IST 2021
+# Started at Mon Feb 15 00:39:55 IST 2021
 #
 gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode_test/lat.2.gz' 
 apply-cmvn --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- 
 add-deltas ark:- ark:- 
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10 obama alisema kutumia vizuri nafasi yake tukipata siku hiyo ajali ni 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10 is -8.84839 over 511 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100 wanafanya kazi ya vyama vya kuweka na kukopa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100 is -9.02251 over 505 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101 kwa matokeo hayo kwa kuwa mamlaka ya mapato 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101 is -9.21709 over 520 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102 maprofesa maskini kwamba utafahamu sheria hizo za soka 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102 is -8.82807 over 394 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103 labda zimefanya kwamba mataifa afrika mashariki na kati ya kufuzu katika mashindano 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103 is -8.90491 over 470 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10 obama alisema kutumia vizuri nafasi yake atakayepata siku hiyo jumapili 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part10 is -8.87567 over 511 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100 wanafanya kazi na wanadaiwa kuwa kati ya kulipwa 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part100 is -9.00444 over 505 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101 wa mkoa wa dodoma na mia tisa na kwamba 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part101 is -9.21974 over 520 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102 na profesa maskini kwamba utafahamu sheria hizo za soka 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part102 is -8.8521 over 394 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103 labda zimefanya kwamba mataifa afrika mashariki na kati ya watafuzu katika mashindano 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part103 is -8.9238 over 470 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104 makubwa kama kombe la dunia na mara nyingi kombe la mataifa bingwa binafsi 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104 is -8.78676 over 392 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105 ni wilaya ya tarime 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105 is -9.05848 over 253 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106 akitaka mashabiki wa soka hasa napenda 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106 is -9.06754 over 264 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107 ya matukio kwa mwaka huu wakati 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107 is -9.00451 over 529 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108 kamati ya mwanamke wetu 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108 is -9.39966 over 256 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109 nane baada ya kusoma 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109 is -9.11309 over 297 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11 kujikita katika ubunifu huku wakili 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11 is -9.02189 over 267 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110 hawatakubali kuupoteza kufanyika 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110 is -9.50285 over 250 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111 kukosa kuona kwamba kuna msemo na anasema anasema kwamba uzalendo 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111 is -8.91228 over 450 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112 wa kwanza nyingine baada ya kinondoni 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112 is -8.63374 over 235 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113 wakati kwa wafanyakazi nchini kitaifa mabadiliko ya juu ya suala la posho na habari 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113 is -9.12461 over 507 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114 na exuper kasumba wasiwasi tinoco natazama matuta klabu hiyo kwanza 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114 is -9.06734 over 500 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115 hata kama usalama wa ya 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115 is -9.08102 over 359 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116 ya pili dhidi ya wataalamu wa wanawake 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116 is -9.4244 over 443 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117 kwa kweli 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117 is -9.31283 over 239 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118 katika mkataba wake 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118 is -9.05228 over 270 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part104 is -8.85378 over 392 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105 ya simba na yanga 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part105 is -9.03945 over 253 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106 akitaka mashabiki wa soka za napenda 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part106 is -9.10426 over 264 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107 pia na kwa wakati 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part107 is -8.98698 over 529 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108 kamati ya maana ya watu 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part108 is -9.41919 over 256 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109 tano baada ya kuona 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part109 is -9.1293 over 297 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11 kujikita katika ubunifu wakili 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part11 is -9.0632 over 267 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110 watakula kutokana na katika 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part110 is -9.48275 over 250 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111 profesa kuwa kuna kuna msemo na na kusema kusema kwamba uzalendo 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part111 is -8.92606 over 450 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112 kwanza nyingine baada ya kinondoni 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part112 is -8.66923 over 235 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113 wakiwa na kuwafanya kwanza chini kitaifa kibadeni doria je masuala ya posho na habari 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part113 is -9.1373 over 507 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114 na habel wasiwe na wasiwasi tamko lake la maana tata lakini kwanza 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part114 is -9.07382 over 500 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115 hata katika na nane na wa ya 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part115 is -9.04869 over 359 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116 naye kocha wa timu hiyo inatokana na wanawake 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part116 is -9.45779 over 443 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117 katika mchezo wa kike 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part117 is -9.30039 over 239 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118 ya mkataba wake 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part118 is -9.00794 over 270 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part119 na hasa tisa na profesa mwakyusa ukiwa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part119 is -8.85844 over 292 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12 katika hotuba yake uchumi ndio itakuwa mada kuu 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12 is -9.18059 over 305 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120 ya nairobi hapo nchini kenya mashaka tucta wasio na tano tatu mbili 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120 is -8.81138 over 466 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121 atakapokuwa na michezo mingine kama huu labda mwenzangu na nane 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121 is -8.99279 over 361 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122 ila ninachosema profesa kwa kuweza kushiriki pamoja na si jumapili 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122 is -8.86777 over 428 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123 na tumeshuhudia mengi wakati wachezaji ya watu katika mechi zake ulisema 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123 is -8.40161 over 539 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124 kulitokea na kucheza na tanesco afya 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124 is -8.94255 over 240 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125 wa dansi wachezaji wake kitaalamu kuona namna ya timu mbalimbali kucheza 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125 is -8.61675 over 454 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126 kwani ni kweli kabisa ni kitu ambacho ni kugusia 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126 is -8.71653 over 262 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part119 is -8.86719 over 292 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12 katika hotuba yake uchumi ndiyo itakuwa mada kuu 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part12 is -9.20872 over 305 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120 ya nairobi kikapu nchini kenya mashaka itawasili na tano tatu mbili 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part120 is -8.84278 over 466 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121 hata kutokana na mengine kama huu na dada zangu na nane 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part121 is -9.03522 over 361 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122 amina sana profesa kwa kuweza kushiriki pamoja na si jumapili 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part122 is -8.89848 over 428 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123 na tumeshuhudia mengi wakati wachezaji na watakatifu walicheza kwa alisema 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part123 is -8.42532 over 539 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124 kulitokea na kucheza mechi tanesco afya 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part124 is -8.96625 over 240 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125 wa darasa la tanzania wakipita na na kuona namna ya nchi mbalimbali kucheza 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part125 is -8.64249 over 454 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126 lakini ni kweli kabisa ni kitu ambacho ni jinsi ya 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part126 is -8.75624 over 262 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127 licha ya kwamba pengine tanzania waliibuka kidedea katika michuano 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127 is -8.56171 over 430 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128 haya ya chalenji lakini 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128 is -8.13482 over 228 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129 akaona bado kuhitajika nguvu za ziada katika wa kisha kwamba nchi yetu 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129 is -8.81979 over 472 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part127 is -8.58243 over 430 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128 haya ya ya chalenji lakini 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part128 is -8.1906 over 228 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129 akaona bado kuhitajika nguvu za ziada kikao hicho ambacho yetu 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part129 is -8.87595 over 472 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13 ambayo itakuwa akigusia msimamo wake 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13 is -8.70907 over 243 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130 hii watakuwa dansi na mkato mashindano soka sakafuni saba kombo 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130 is -8.68569 over 437 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131 kuna mashitaka mashitaka wakati kifungu kimelemeta 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131 is -9.0846 over 331 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132 akudo kufanya vizuri kwa timu zote za taifa na changamoto ni kuwa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132 is -8.91851 over 365 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part13 is -8.76387 over 243 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130 hii kwa kuwa darasa la mkato mashindano soka sakafuni saba kombo 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part130 is -8.72237 over 437 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131 kupiga mashuti kwamba shirikisho la soka chiki nafuu kimelemeta 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part131 is -9.10027 over 331 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132 kufanya vizuri kwa timu zetu za taifa changamoto ni kuwa 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part132 is -8.95057 over 365 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part133 viongozi wa soka afrika mashariki na kati kuhakikisha kwamba wachezaji unajua 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part133 is -8.8053 over 374 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part133 is -8.86147 over 374 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part134 na moja kwa moja ni kama zangu hapa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part134 is -8.2616 over 244 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135 akitoa bushoke tujaribu kuangalia hii 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135 is -8.64634 over 274 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part134 is -8.32587 over 244 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135 vita bushoke tujaribu kuangalia hili 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part135 is -8.6568 over 274 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136 mchezo wa kabinda mbona pemba na 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136 is -8.69959 over 230 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137 mashabiki wengi hapa katika ukanda 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137 is -8.79924 over 215 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138 wakili masinde vitabu serikali tukapata jioni william 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138 is -8.73748 over 424 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139 maofisa wa tanzania kama dakika 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139 is -8.50683 over 280 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part136 is -8.72027 over 230 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137 mashabiki wengi hapo kukana 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part137 is -8.81297 over 215 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138 wakili masinde vitabu serikali tukapata john william 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part138 is -8.75697 over 424 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139 maarufu sana tanzania kama dakika 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part139 is -8.53487 over 280 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14 waziri mkuu wa reli kibwana ambaye ni kweli ametangaza kujiuzulu wadhifa wake 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14 is -8.82747 over 548 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140 ya watoto walio upande gani kisasa katika jiji la dar es salaam pengine 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140 is -8.70628 over 417 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141 hawa wa shirikisho la uingereza 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141 is -8.67747 over 314 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142 wewe kama kocha kukuza vipaji vya wachezaji 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142 is -8.78233 over 327 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143 hapo kwa ajili ya tatu hapa tanzania 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143 is -8.59482 over 244 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part14 is -8.87733 over 548 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140 ya watu walio upande gani hivi sasa katika jiji la dar es salaam pengine 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part140 is -8.7405 over 417 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141 hao mashabiki wa kuongeza 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part141 is -8.65185 over 314 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142 wao kama kocha kukuza vipaji vya wachezaji 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part142 is -8.79323 over 327 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143 hapo kwa ajili ya watanzania 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part143 is -8.62861 over 244 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part144 wazungumzaji kinidhamu za wachezaji wa timu za taifa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part144 is -8.5344 over 376 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145 alisema kwa upande wa mali 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145 is -9.34061 over 222 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146 angalia kuomba mkopo masomo kutokana na kilimo 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146 is -9.0899 over 422 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147 na na kwa kumi milioni kutokana na 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147 is -9.14051 over 403 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148 enzi zake nyingi ambazo kwa pamoja na kupinga hukumu 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148 is -8.95103 over 508 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149 itaendelea kuiunga mkono timu ya taifa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149 is -8.98306 over 340 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part144 is -8.555 over 376 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145 wadau mbalimbali 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part145 is -9.35347 over 222 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146 angalia kuomba mkopo mwaka huu 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part146 is -9.11859 over 422 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147 wa nyota wake ikiwamo kubana 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part147 is -9.12676 over 403 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148 kuna makao makuu 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part148 is -8.91074 over 508 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149 kipa wa timu ya taifa 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part149 is -8.96401 over 340 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15 wanakwenda ambaye anakabiliwa na upinzani mkali kikwete na kati 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15 is -8.79625 over 433 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150 alidai kuwa kampuni hiyo isinunuliwe 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150 is -8.95814 over 373 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151 ni kweli kuonana na ukame nami naungana na kwamba wengine 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151 is -9.06868 over 551 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152 manunuzi ya umma 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152 is -9.00028 over 306 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153 koplo kuzipata kupitia na 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153 is -9.16445 over 254 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154 kutokana na kuporomoka kwa ziara ya coca cola taifa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154 is -9.33647 over 351 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part15 is -8.83356 over 433 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150 alidai 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part150 is -8.96273 over 373 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151 kwa maneno mengine 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part151 is -9.07772 over 551 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152 wametakiwa 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part152 is -8.99084 over 306 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153 kupitia na 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part153 is -9.16083 over 254 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154 wa makao makuu ya coca cola taifa 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part154 is -9.33915 over 351 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155 lakini bado kuna 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155 is -9.29791 over 218 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156 shindano hilo mama anayeuza katika ukanda wa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156 is -9.02314 over 485 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157 mkono kwa nguvu katika jana hali ya amani karume na kazi ya ziada kufunza vijana 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157 is -8.82869 over 572 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158 kuongeza kuwa uzinduzi wa 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158 is -9.14706 over 223 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159 nakushukuru tunadhani watajumuika soka katika lakini vijavyo jaji kwa wananchi 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159 is -8.89953 over 549 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part155 is -9.32264 over 218 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156 licha ya kuwa na viwango vya ubora wa 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part156 is -9.03101 over 485 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157 kumbukumbu vizuri katika jana haya yameandikwa na kazi ya ziada kufunza vijana 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part157 is -8.84942 over 572 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158 kuongeza kuwa madikteta 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part158 is -9.1771 over 223 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159 nakushukuru tunapenda watajumuika soka katika kipindi vijavyo jaji kwa wananchi 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part159 is -8.90495 over 549 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part16 alisema kuwa ajiuzulu kwa hiyari yake 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part16 is -8.78005 over 268 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160 na ni jk wananchi tutapiga kiswahili amekufa shida nashukuru 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160 is -9.01037 over 373 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161 na langoni vitabu shule za sekondari linatokana na maana kama hivi 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161 is -8.63399 over 460 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part16 is -8.81111 over 268 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160 na ni jukwaani chetu cha fedha kiswahili yenye ufanisi kila shule 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part160 is -9.03413 over 373 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161 na langoni vitabu semina hiyo inaendelea tena leo makini 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part161 is -8.63878 over 460 frames.
 LOG (apply-cmvn[5.5.883~1-3eea3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 75 utterances, errors on 0
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162 kama na kundi a na tume popote pale 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162 is -8.34091 over 298 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163 na mashabiki wa kanda na wapi za michezo 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163 is -8.58071 over 253 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162 kama na kundi a natumai upo pale 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part162 is -8.38125 over 298 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163 na mashabiki kandanda wapi za michezo 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part163 is -8.61184 over 253 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164 wanapata barabara alisema mwakalebela 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164 is -8.53493 over 259 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165 na na bila shaka na kurudi tena kutosha 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165 is -8.91713 over 245 frames.
-SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166 katika jukwaa la michezo na leo hii ni kitu cha mwisho ambacho 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166 is -8.47249 over 458 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part164 is -8.58733 over 259 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165 namna bila shaka na bodi ya kutosha 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part165 is -8.94762 over 245 frames.
+SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166 jukwaa la michezo na leo hii ni kitu cha maisha ambacho 
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part166 is -8.52901 over 458 frames.
 SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167 pengine kuangusha kila mwanachama wa afrika mashariki 
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167 is -8.43585 over 435 frames.
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:main():gmm-latgen-faster.cc:176) Time taken 391.664s: real-time factor assuming 100 frames/sec is 1.43519
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance SWH-05-20110123_16k-emission_swahili_05h30_-_06h00_tu_20110123_part167 is -8.46912 over 435 frames.
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:main():gmm-latgen-faster.cc:176) Time taken 358.052s: real-time factor assuming 100 frames/sec is 1.31203
 LOG (gmm-latgen-faster[5.5.883~1-3eea3]:main():gmm-latgen-faster.cc:179) Done 75 utterances, failed for 0
-LOG (gmm-latgen-faster[5.5.883~1-3eea3]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.87881 over 27290 frames.
-# Accounting: time=392 threads=1
-# Ended (code 0) at Sat Feb 13 17:58:41 IST 2021, elapsed time 392 seconds
+LOG (gmm-latgen-faster[5.5.883~1-3eea3]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.89765 over 27290 frames.
+# Accounting: time=359 threads=1
+# Ended (code 0) at Mon Feb 15 00:45:54 IST 2021, elapsed time 359 seconds

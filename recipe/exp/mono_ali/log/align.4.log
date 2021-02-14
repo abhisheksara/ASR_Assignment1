@@ -1,14 +1,14 @@
 # compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train_sp3/split4/4/text|" ark:- | gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono_ali/final.mdl - |" ark:- "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_sp3/split4/4/utt2spk scp:data/train_sp3/split4/4/cmvn.scp scp:data/train_sp3/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono_ali/ali.4.gz" 
-# Started at Sat Feb 13 17:51:36 IST 2021
+# Started at Mon Feb 15 00:39:21 IST 2021
 #
-compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train_sp3/split4/4/text|' ark:- 
 gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono_ali/final.mdl - |' ark:- 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_sp3/split4/4/utt2spk scp:data/train_sp3/split4/4/cmvn.scp scp:data/train_sp3/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono_ali/ali.4.gz' 
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train_sp3/split4/4/text|' ark:- 
 gmm-boost-silence --boost=1.0 1 exp/mono_ali/final.mdl - 
 WARNING (gmm-boost-silence[5.5.883~1-3eea3]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
 LOG (gmm-boost-silence[5.5.883~1-3eea3]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
 LOG (gmm-boost-silence[5.5.883~1-3eea3]:main():gmm-boost-silence.cc:103) Wrote model to -
-add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/train_sp3/split4/4/utt2spk scp:data/train_sp3/split4/4/cmvn.scp scp:data/train_sp3/split4/4/feats.scp ark:- 
+add-deltas ark:- ark:- 
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part10
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part100
@@ -18,7 +18,6 @@ WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wra
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part103
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part104
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part105
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part105 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part106
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part107
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part108
@@ -91,6 +90,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part163
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part163 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part164
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part164 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part165
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part166
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part167
@@ -143,7 +143,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part203 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part204
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part205
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part205 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part206
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part206 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part207
@@ -151,16 +150,15 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part209
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part21
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part210
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part210 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part211
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part212
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part213
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part214
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part215
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part215 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part216
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part217
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part22
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part22 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part23
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part24
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part25
@@ -230,11 +228,11 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part81
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part82
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part82 with beam 40
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:626) Did not successfully decode file sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part82, len = 370
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part83
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part83 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part84
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part85
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part85 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part86
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part87
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part88
@@ -248,13 +246,13 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part94
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part95
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part96
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part96 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part97
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part97 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part98
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101107_16k-emission_swahili_05h30_-_06h00_tu_20101107_part99
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part10
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part10 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part100
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part101
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part102
@@ -274,13 +272,13 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part115
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part115 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part116
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part116 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part117
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part118
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part119
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part12
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part120
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part121
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part121 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part122
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part123
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part124
@@ -301,6 +299,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part137
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part137 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part138
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part138 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part139
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part14
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part140
@@ -361,7 +360,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part189
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part19
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part190
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part190 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part191
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part192
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part193
@@ -371,13 +369,11 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part195 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part196
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part197
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part197 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part198
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part199
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part2
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part20
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part200
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part200 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part201
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part202
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part203
@@ -386,6 +382,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part206
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part207
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part208
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part208 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part209
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part21
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part210
@@ -418,6 +415,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part24
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part25
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part26
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part26 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part27
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part28
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part29
@@ -426,7 +424,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part31
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part32
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part33
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part33 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part34
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part35
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part36
@@ -479,11 +476,11 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part77
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part78
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part79
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part79 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part8
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part80
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part81
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part82
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part82 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part83
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part83 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part84
@@ -500,6 +497,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part94
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part94 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part95
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part95 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part96
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part97
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101109_emission_swahili_05h30_-_06h00_tu_20101109_part98
@@ -575,11 +573,11 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part160
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part161
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part162
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part162 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part163
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part164
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part165
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part166
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part166 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part167
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part168
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part169
@@ -602,6 +600,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part180 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part181
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part181 with beam 40
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:626) Did not successfully decode file sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part181, len = 411
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part182
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part182 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part183
@@ -688,6 +687,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part253
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part254
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part255
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part255 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part256
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part257
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part258
@@ -821,6 +821,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part37
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part370
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part371
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part371 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part372
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part373
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part374
@@ -857,7 +858,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part400
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part401
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part402
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part402 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part403
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part404
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part405
@@ -871,9 +871,11 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part412
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part413
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part414
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part414 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part415
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part416
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part417
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part417 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part418
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part419
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part42
@@ -887,7 +889,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part427
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part428
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part429
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part429 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part43
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part430
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part431
@@ -918,6 +919,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part45
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part450
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part450 with beam 40
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:626) Did not successfully decode file sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part450, len = 503
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part451
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part452
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part453
@@ -925,6 +927,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part455
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part456
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part457
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part457 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part458
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part459
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part46
@@ -932,7 +935,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part461
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part461 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part462
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part462 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part463
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part464
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part465
@@ -954,6 +956,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part479 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part48
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part480
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part480 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part481
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part482
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part483
@@ -992,7 +995,6 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part66
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part67
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part68
-WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part68 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part69
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part7
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part70
@@ -1018,6 +1020,7 @@ LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part89
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part9
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part90
+WARNING (gmm-align-compiled[5.5.883~1-3eea3]:AlignUtteranceWrapper():decoder-wrappers.cc:617) Retrying utterance sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part90 with beam 40
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part91
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part92
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part93
@@ -1029,8 +1032,8 @@ LOG (compile-train-graphs[5.5.883~1-3eea3]:main():compile-train-graphs.cc:147) c
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part97
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part98
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:127) sp1.1-SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part99
-LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -104.652 over 299748 frames.
+LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -105.543 over 298464 frames.
 LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:137) Retried 74 out of 942 utterances.
-LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:139) Done 940, errors on 2
-# Accounting: time=25 threads=1
-# Ended (code 0) at Sat Feb 13 17:52:01 IST 2021, elapsed time 25 seconds
+LOG (gmm-align-compiled[5.5.883~1-3eea3]:main():gmm-align-compiled.cc:139) Done 937, errors on 5
+# Accounting: time=20 threads=1
+# Ended (code 0) at Mon Feb 15 00:39:41 IST 2021, elapsed time 20 seconds

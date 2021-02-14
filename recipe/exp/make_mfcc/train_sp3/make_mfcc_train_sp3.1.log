@@ -1,5 +1,5 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train_sp3/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train_sp3/wav_train_sp3.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train_sp3/utt2num_frames.1 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.1.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.1.scp 
-# Started at Sat Feb 13 17:37:05 IST 2021
+# Started at Mon Feb 15 00:32:50 IST 2021
 #
 copy-feats --write-num-frames=ark,t:exp/make_mfcc/train_sp3/utt2num_frames.1 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.1.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train_sp3.1.scp 
 compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train_sp3/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train_sp3/wav_train_sp3.1.scp ark:- 
@@ -196,4 +196,4 @@ VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) P
 LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:185)  Done 173 out of 173 utterances.
 LOG (copy-feats[5.5.883~1-3eea3]:main():copy-feats.cc:143) Copied 173 feature matrices.
 # Accounting: time=2 threads=1
-# Ended (code 0) at Sat Feb 13 17:37:07 IST 2021, elapsed time 2 seconds
+# Ended (code 0) at Mon Feb 15 00:32:52 IST 2021, elapsed time 2 seconds
