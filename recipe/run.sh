@@ -107,16 +107,35 @@ if [ $stage -le 5 ]; then
      steps/align_si.sh --nj $nj --cmd "$train_cmd" \
         data/train_sp3 data/lang exp/mono exp/mono_ali
 	 steps/train_deltas.sh --boost-silence 1.25  --cmd "$train_cmd"  \
-	    1000 10000 data/train_sp3 data/lang exp/mono_ali exp/tri1
+	    1000 10000 data/train_sp3 data/lang exp/mono_ali exp/tri1_aug
     echo "Triphone training done"
+
   (
     echo "Decoding the test set"
-    utils/mkgraph.sh data/lang exp/tri1 exp/tri1/graph
+    utils/mkgraph.sh data/lang exp/tri1_aug exp/tri1_aug/graph
   
 	# Add triphone decoding steps here #
   steps/decode.sh --nj $test_nj --cmd "$decode_cmd" \
-      exp/tri1/graph data/test exp/tri1/decode_test
+      exp/tri1_aug/graph data/test exp/tri1_aug/decode_test
     echo "Triphone decoding done."
+    ) &
+fi
+
+if [ $stage -le 6 ]; then
+  (
+    for x in truetest; do
+      steps/make_mfcc.sh --nj 20 --cmd "$train_cmd" corpus/data/$x exp/make_mfcc/$x mfcc
+      steps/compute_cmvn_stats.sh corpus/data/$x exp/make_mfcc/$x mfcc
+  done
+
+    echo "Decoding the truetest set"
+    utils/mkgraph.sh data/lang exp/tri1_aug exp/tri1_aug/graph
+  
+	# Add triphone decoding steps here #
+  steps/decode.sh --nj $test_nj --cmd "$decode_cmd" \
+      exp/tri1_aug/graph corpus/data/truetest exp/tri1_aug/decode_truetest
+    echo "Triphone decoding done for truetest"
+    for x in exp/*/decode_truetest; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done
     ) &
 fi
 

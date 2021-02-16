@@ -1,0 +1,71 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.15 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.15.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.15 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train.15.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train.15.scp 
+# Started at Mon Feb 15 12:00:41 IST 2021
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.15 --compress=true ark:- ark,scp:/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train.15.ark,/home/abhishek/Desktop/kaldi/egs/assgmt1/recipe/mfcc/raw_mfcc_train.15.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.15 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.15.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part237
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part238
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part239
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part24
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part240
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part241
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part242
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part243
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part244
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part245
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part246
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part247
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part248
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part249
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part25
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part250
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part251
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part252
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part253
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part254
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part255
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part256
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part257
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part258
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part259
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part26
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part260
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part261
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part262
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part263
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part264
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part265
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part266
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part267
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part268
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part269
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part27
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part270
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part271
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part272
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part273
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part274
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part275
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part276
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part277
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part278
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part279
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part28
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part280
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part281
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part282
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part283
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part284
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part285
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part286
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part287
+VLOG[2] (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:182) Processed features for key SWH-05-20101110_16k-emission_swahili_15h00_-_16h00_tu_20101110_part288
+LOG (compute-mfcc-feats[5.5.883~1-3eea3]:main():compute-mfcc-feats.cc:185)  Done 57 out of 57 utterances.
+LOG (copy-feats[5.5.883~1-3eea3]:main():copy-feats.cc:143) Copied 57 feature matrices.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Feb 15 12:00:44 IST 2021, elapsed time 3 seconds

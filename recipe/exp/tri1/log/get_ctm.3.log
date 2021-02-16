@@ -1,11 +1,11 @@
-# set -o pipefail && linear-to-nbest "ark:gunzip -c exp/tri1/ali.3.gz|" "ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt < data/train_sp3//split4/3/text |" "" "" ark:- | lattice-align-words data/lang/phones/word_boundary.int exp/tri1/final.mdl ark:- ark:- | nbest-to-ctm --frame-shift=0.01 --print-silence=false ark:- - | utils/int2sym.pl -f 5 data/lang/words.txt | gzip -c > exp/tri1/ctm.3.gz 
-# Started at Mon Feb 15 01:02:08 IST 2021
+# set -o pipefail && linear-to-nbest "ark:gunzip -c exp/tri1/ali.3.gz|" "ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt < data/train//split4/3/text |" "" "" ark:- | lattice-align-words data/lang/phones/word_boundary.int exp/tri1/final.mdl ark:- ark:- | nbest-to-ctm --frame-shift=0.01 --print-silence=false ark:- - | utils/int2sym.pl -f 5 data/lang/words.txt | gzip -c > exp/tri1/ctm.3.gz 
+# Started at Mon Feb 15 12:29:45 IST 2021
 #
-lattice-align-words data/lang/phones/word_boundary.int exp/tri1/final.mdl ark:- ark:- 
+linear-to-nbest 'ark:gunzip -c exp/tri1/ali.3.gz|' 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt < data/train//split4/3/text |' '' '' ark:- 
 nbest-to-ctm --frame-shift=0.01 --print-silence=false ark:- - 
-linear-to-nbest 'ark:gunzip -c exp/tri1/ali.3.gz|' 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt < data/train_sp3//split4/3/text |' '' '' ark:- 
-LOG (linear-to-nbest[5.5.883~1-3eea3]:main():linear-to-nbest.cc:130) Done 928 n-best entries ,0 had errors.
-LOG (lattice-align-words[5.5.883~1-3eea3]:main():lattice-align-words.cc:125) Successfully aligned 928 lattices; 0 had errors.
-LOG (nbest-to-ctm[5.5.883~1-3eea3]:main():nbest-to-ctm.cc:119) Converted 928 linear lattices to ctm format; 0 had errors.
+lattice-align-words data/lang/phones/word_boundary.int exp/tri1/final.mdl ark:- ark:- 
+LOG (linear-to-nbest[5.5.883~1-3eea3]:main():linear-to-nbest.cc:130) Done 232 n-best entries ,0 had errors.
+LOG (lattice-align-words[5.5.883~1-3eea3]:main():lattice-align-words.cc:125) Successfully aligned 232 lattices; 0 had errors.
+LOG (nbest-to-ctm[5.5.883~1-3eea3]:main():nbest-to-ctm.cc:119) Converted 232 linear lattices to ctm format; 0 had errors.
 # Accounting: time=1 threads=1
-# Ended (code 0) at Mon Feb 15 01:02:09 IST 2021, elapsed time 1 seconds
+# Ended (code 0) at Mon Feb 15 12:29:46 IST 2021, elapsed time 1 seconds

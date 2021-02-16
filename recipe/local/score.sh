@@ -54,4 +54,9 @@ $cmd LMWT=$min_lmwt:$max_lmwt $dir/scoring/log/score.LMWT.log \
     compute-wer --text --mode=present \
      ark:$dir/scoring/test_filt.txt  ark,p:- ">&" $dir/wer_LMWT || exit 1;
 
+# for x in exp/tri1/decode*; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh | sed "s/%WER/$f/g" > temp.txt; done
+#   python3 output.py
+#   rm $dir/scoring/$f
+# done;
+
 exit 0;
